@@ -1,5 +1,5 @@
 uvicorn
 fastapi
-joblib
 pydantic
 sklearn
+pandas
