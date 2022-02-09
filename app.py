@@ -52,7 +52,7 @@ model = Model()
 
 @app.get('/')
 def index():
-    return {'message': 'API is working.'}
+    return {'message': 'API is working. - [This is a modification to test CD/CI]'}
 
 
 @app.post('/predict')
