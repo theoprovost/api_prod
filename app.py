@@ -7,8 +7,6 @@ from sklearn import datasets
 from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
 
-from fastapi.encoders import jsonable_encoder
-
 
 class Model():
     def __init__(self) -> None:
@@ -71,10 +69,7 @@ def predict(data: Iris):
         data['petal_length'],
         data['petal_width']
     )
-    print('\n\n\n')
-    print(y_pred, y_prob, model.target_names[y_pred])
-    print(type(y_pred), type(y_prob), type(model.target_names[y_pred]))
-    print('\n\n\n')
+
     return {
         # NB numpy types seems not to be supported
         'prediction': float(y_pred),
@@ -83,7 +78,7 @@ def predict(data: Iris):
     }
 
 
-def checkData(data):
+def checkData(data) -> bool:
     for x in data:
         print(x, data[x])
         if data[x] <= 0:
