@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'theoprovost'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4D3AADE837FD44A19EDEB3755771772F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_677A5FE4512A4428AADDD7914C8FC4A6 }}
