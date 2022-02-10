@@ -50,7 +50,7 @@ model = Model()
 
 @app.get('/')
 def index():
-    return {'message': 'API is working. - [This is a modification to test CD/CI]'}
+    return {'message': 'API is working. - [This is a modification to test CD/CI in Azrure]'}
 
 
 @app.post('/predict')
