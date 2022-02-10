@@ -80,11 +80,10 @@ def predict(data: Iris):
 
 def checkData(data) -> bool:
     for x in data:
-        print(x, data[x])
         if data[x] <= 0:
             return False
     return True
 
 
-if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=8000)
+if __name__ == '__app__':
+    uvicorn.run(app, host='0.0.0.0', port=8000)
